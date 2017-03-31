@@ -1,0 +1,101 @@
+.patient-modal {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+  opacity: 0;
+  overflow: auto;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+.patient-modal-inner {
+  // position: relative;
+  // padding: 50px 30px 30px 30px;
+  // margin: 20px 50px;
+  // background: #fff;
+
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  margin: 20px auto;
+  background: #fff;
+  max-width: 800px;
+  border-radius: 25px;
+
+  &.-medium {
+    max-width: 600px;
+  }
+
+  &.-large {
+    max-width: 750px;
+  }
+
+  &.-extra-large {
+    max-width: 1000px;
+  }
+
+}
+
+.patient-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 35px;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+.patient-modal-view-patient {
+
+  > .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .patient-add-btn {
+    margin-top: 30px;
+  }
+
+  h1 {
+    margin: 0;
+    color: #AAA5A0;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  > .information {
+    display: inline-block;
+    width: calc(100% - 100px);
+    font-size: 12px;
+    // padding: 0 30px;
+
+    .info-group {
+      margin-bottom: 5px;
+
+      > .info-label {
+        display: inline-block;
+        width: 130px;
+      }
+      > .info-value {
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+  }
+
+}

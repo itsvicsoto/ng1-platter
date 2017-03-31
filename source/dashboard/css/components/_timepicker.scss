@@ -1,0 +1,59 @@
+.c-timepicker {
+
+  padding: 2px 0;
+
+  .btn {
+    padding: 0 5px;
+  }
+
+  button.btn {
+    padding: 6px;
+    margin-left: 3px;
+  }
+
+  .uib-timepicker {
+    width: 100%;
+  }
+
+  .uib-separator {
+    padding: 0 5px 0 0;
+  }
+
+  //.uib-increment {
+  //  display: none;
+  //}
+
+  .glyphicon {
+    font-family: "Ionicons";
+
+    &.glyphicon-chevron-up {
+      &:before {
+        content : "\f10d";
+      }
+    }
+
+    &.glyphicon-chevron-down {
+      &:before {
+        content : "\f104";
+      }
+    }
+
+  }
+
+}
+
+  .c-timepicker--shorter {
+    .form-control {
+      width: 60px;
+    }
+  }
+
+  .c-timepicker-chosentime {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 5px 3px;
+    background: #f2f3f6;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }

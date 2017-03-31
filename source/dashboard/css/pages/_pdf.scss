@@ -1,0 +1,190 @@
+.pdf-cont {
+  font-family: Arial;
+  max-width: 960px;
+  font-weight: normal;
+  padding: 0 15px; 
+  margin: auto;
+  // border: 1px solid #F2F3F6;
+  color: #707070;
+  border-left: 1px solid #F2F3F6;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    .-vh-align-middle {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .row {
+    > div {
+      border: 0;
+      // border-right: 1px solid #F2F3F6;
+      // border-bottom: 1px solid #F2F3F6;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+    }
+  }
+}
+
+.pdf-oasis-title {
+margin: 0;
+}
+
+.pdf-oasis-subtitle {
+  margin: 0;
+}
+
+.pdf-oasis-app-title-right-border {
+  border-right: 1px solid #e2e2e2 !important;
+}
+
+.pdf-oasis-app-title {
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.pdf__title {
+  font-size: 12px;
+  padding: 10px;
+  background: #97BFBE;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pdf-table {
+  width: 100%;
+
+  tr {
+    > td {
+      border-right: 1px solid #F2F3F6;
+      border-bottom: 1px solid #F2F3F6;
+
+      &:first-child {
+        // border-left: 1px solid #F2F3F6;
+        // border-right: none;
+      }
+
+      &:last-child {
+        // border-right: 0;
+        // border-right: none;
+      }
+    }
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+
+
+  &--two {
+    @extend .pdf-table;
+
+    td  {
+      width: 50%;
+    }
+
+  }
+
+  &--three {
+    @extend .pdf-table;
+
+    td  {
+      width: 33.33%;
+    }
+
+  }
+
+  &--four {
+    @extend .pdf-table;
+
+    td  {
+      width: 25%;
+    }
+
+  }
+
+}
+
+.pdf__bg-gray {
+  background: #F2F3F6;
+}
+
+.pdf__name {
+  padding: 20px 10px;
+  font-size: 18px;
+}
+
+.pdf__form-title {
+  padding: 20px;
+  background: #F2F3F6;
+  text-align: center;
+  color: #707070;
+}
+
+.pdf__sub-title {
+  padding: 10px;
+  background: #EDEFF3;
+  color: #707070;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.pdf__location {
+  position: relative;
+  padding: 40px 20px;
+  background: #F2F3F6;
+
+  > i {
+    float: left;
+  }
+
+  > div {
+    padding-left: 15px;
+    font-weight: 500;
+    letter-spacing: .8px;
+  }
+
+}
+
+
+.pdf-form-control {
+  padding: 10px;
+}
+
+  .pdf-form-control__label {
+    margin-bottom: 2px;
+    color: #A5A8AE;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .pdf-form-control__value {
+    font-weight: normal;
+    color: #5D5959;
+  }
+
+  .pdf-form-control__checkbox {
+    display: inline-block;
+    padding: 5px 5px 0 0;
+
+    span {
+      font-weight: normal;
+      color: #5D5959;
+    }
+
+  }

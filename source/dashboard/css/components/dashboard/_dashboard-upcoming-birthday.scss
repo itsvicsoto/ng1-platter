@@ -1,0 +1,60 @@
+.dashboard-upcoming-birthday {
+  margin: 20px 0;
+  background: #464458;
+  border-radius: 20px;
+  color: #fff;
+}
+
+  .dashboard-upcoming-birthday__header {
+    padding: 20px 20px;
+    text-align: right;
+    font-size: 16px;
+    background-image: url("/assets/dashboard/images/dashboard/dashboard_birthday.png");
+    background-repeat: no-repeat;
+    background-size: 73px;
+    border-bottom: 1px solid #5F5B88;
+    background-position-x: 15px;
+    background-position-y: 6px;
+
+    > .title {
+      font-weight: bold;
+    }
+
+  }
+
+  .dashboard-upcoming-birthday__flow {
+    overflow: auto;
+    max-height: 300px;
+  }
+
+  .dashboard-upcoming-birthday__content-list {
+    display: table;
+    width: 100%;
+  }
+
+    .dashboard-upcoming-birthday__item {
+      display: table-row;
+
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 10px;
+        border-top: 1px solid #5F5B88;
+      }
+
+      > .avatar-holder {
+        text-align: center;
+      }
+      > .avatar {}
+      > .info {
+        text-align: left;
+        > .name {
+          font-weight: bold;
+        }
+        > .birthdate {}
+      }
+      .age {
+        font-size: 20px;
+      }
+
+    }

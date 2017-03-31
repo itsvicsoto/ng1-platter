@@ -1,0 +1,160 @@
+.m-floating-list {
+  @include dashboardContentBox(false, false, false);
+  position: fixed;
+  bottom: 10px;
+  z-index: 10;
+  left: 80px;
+  right: 50px;
+  margin: auto;
+  padding: 0;
+  /* height: 100%; */
+  margin-bottom: 0;
+  //border-bottom-left-radius: 0;
+  //border-bottom-right-radius: 0;
+  //border-top-left-radius: 0;
+  box-shadow: 0 1px 28px -10px black;
+
+  .tag {
+    min-width: 55px;
+    margin-top: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+
+  .m-floating-list__inner {
+    overflow: auto;
+    max-height: 125px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+
+  .m-floating-list__tabs {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: #FCFBF7;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: 0 -6px 38px -18px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+    .m-floating-list__tab {
+      display: inline-block;
+      padding: 5px 10px;
+
+
+      &--green {
+        @extend .m-floating-list__tab;
+        background: #85C860;
+        color: white;
+        border-top-right-radius: 10px;
+        cursor: pointer;
+      }
+
+    }
+
+// OVERRIDE : any biglist inside a floating list
+
+.m-floating-list {
+
+  // FILTER BOX
+  .filter-box {
+    padding: 5px;
+  }
+
+  // BIG list
+  .big-list {
+    margin: 0;
+
+    .-header {
+
+      .item-column {
+        border-color: #FCFBF7 !important;
+        border-width: 2px !important;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+      }
+
+    }
+
+
+
+    .big-list-item {
+      cursor: pointer;
+
+      &:not(.-header) {
+        .item-column {
+          background: #EFE7E1;
+          border-bottom: 1px solid #F9F9F9;
+        }
+      }
+
+      &:nth-child(2) {
+        .item-column:first-child {
+          border-top-left-radius: 10px;
+        }
+        .item-column:last-child {
+          border-top-right-radius: 10px;
+        }
+      }
+
+      &:last-child {
+        .item-column:first-child {
+          border-bottom-left-radius: 10px;
+        }
+        .item-column:last-child {
+          border-bottom-right-radius: 10px;
+        }
+      }
+
+    }
+
+  }
+
+  // ITEM COLUMNS
+  .item-column {
+    padding: 3px 5px !important;
+  }
+
+}
+
+// MEDIA :
+
+
+//@media screen and (min-width: 1200px) {
+//  .m-floating-list {
+//      width: 1170px;
+//  }
+//}
+
+@media screen and (min-width: 1440px) {
+  .m-floating-list {
+      max-width: 1440px;
+  }
+}
+
+@media screen and (max-width:  $desktop-hd-above) {
+  .m-floating-list {
+    /* width: 100%; */
+    margin: 0 auto;
+    /* padding: 0 65px 0 20px; */
+    left: 25px;
+    right: 25px;
+  }
+}

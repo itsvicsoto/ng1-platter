@@ -1,0 +1,20 @@
+.row-palette {
+  padding: 2px 5px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+
+  &.-orange {
+    background: #F67159 !important;
+  }
+
+  &.-brown {
+    background: #A5A095;
+  }
+
+  &.-green {
+    background: #87C765;
+  }
+
+}

@@ -1,0 +1,398 @@
+.header {
+  z-index: 10;
+  position: fixed;
+  width: auto;
+  margin: auto;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  border-radius: 500px;
+  //background: rgba(173, 204, 202, 0.82);
+  //background: #cb8c48;
+  background: rgba(90, 90, 90, 0.61);
+  // background: rgb(173, 204, 202);
+  // background: rgba(124,124,124,0.16);
+
+  // Needs latest Compass, add '@import "compass"' to your scss
+  // Permalink - use to edit and share this gradient:
+  // http://colorzilla.com/gradient-editor/#4a485f+0,4a485f+50,3c3849+100
+  // background-color: #4a485f; // Old browsers
+  // @include filter-gradient(#4a485f, #3c3849, vertical); // IE6-9
+  // @include background-image(linear-gradient(top,  #4a485f 0%,#4a485f 50%,#3c3849 100%));
+
+}
+
+.header-nav {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 10px 30px 20px 12px;
+  height: 70px;
+
+  &.-profile-header {
+    // padding: 17px 30px 20px 12px;
+    padding: 8px;
+
+    > li {
+      margin-right: 10px;
+      position: relative;
+    }
+
+    .dropdown-toggle {
+
+      > .ion-chevron-down {
+        margin-left: 10px;
+        position: relative;
+        top: -2px;
+      }
+
+    }
+
+    img {
+      height: 55px;
+    }
+
+  }
+
+  // border
+  &.-right-border {
+    border-right: 1px solid #E7E7E7;
+  }
+
+  &.-left-border {
+    border-left: 1px solid #E7E7E7;
+  }
+
+  > li {
+    display: inline-block;
+
+    a {
+      color: #fff;
+    }
+
+  }
+
+  .avatar-holder {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: top;
+
+    > .avatar {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .avatar-notification {
+    background: #EE6757;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 100%;
+    padding: 0px 6px;
+    font-weight: bold;
+    font-size: 12px;
+    top: 0;
+    left: 72%;
+    position: absolute;
+    span {
+      display: inline-block;
+      line-height: 20px;
+    }
+  }
+
+  .dashboard-icon {
+    font-size: 35px;
+  }
+
+  // Dropdown Notifications
+  .dropdown-icons {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 25px;
+    background: #629FB1;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: top;
+  }
+
+  .info {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 70px;
+    padding: 5px 20px;
+    font-size: 18px;
+
+    > span {
+      display: block;
+      line-height: normal;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+  }
+
+}
+
+/* header weather
+   ========================================================================== */
+
+.header-weather {
+  display: none;
+  float: left;
+  height: 70px;
+  /* padding: 0; */
+  /* margin: 0; */
+  color: #fff;
+
+
+  > .weather-icon {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+  }
+
+  > .weather-temp {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 40px;
+    line-height: 70px;
+    vertical-align: middle;
+  }
+
+  > .weather-info {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 18px;
+    vertical-align: middle;
+
+    > .address {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    > .date {
+      font-size: 90%;
+      color: #F7F6FF;
+    }
+
+  }
+
+  > .weather-compass {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 30px;
+  }
+
+}
+
+/* header-notifier
+   ========================================================================== */
+
+.header-notifier {
+  float: left;
+  height: 75px;
+  padding: 5px 10px;
+  margin: 0;
+  color: #fff;
+  border-right: 1px solid #605D79;
+
+  .notifier-avatar {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 44px;
+  }
+
+  .notifier-info {
+    display: inline-block;
+    padding: 0 10px;
+
+    > .name {
+    }
+
+    > .schedule {
+      font-size: 90%;
+      color: #605D79;
+    }
+  }
+
+  .notifier-slider {
+    display: inline-block;
+
+    .slider-left {
+      margin-right: 7px;
+      padding: 4px 12px 3px 10px;
+    }
+
+    .slider-right {
+      padding: 4px 10px 3px 12px;
+    }
+
+    > .slider-left, > .slider-right {
+      cursor: pointer;
+      float: left;
+      background: #605D79;
+      border-radius: 100%;
+    }
+
+  }
+
+}
+
+/* .header-dropdown-submenu
+   ========================================================================== */
+
+.header-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(58, 58, 58, 0.38);
+  z-index: 8;
+  @include transition(all 300ms ease);
+  opacity: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+
+  &.active {
+    opacity: 1;
+  }
+
+}
+
+.header-dropdown-submenu-trigger {
+
+  > img.default {
+    opacity: 1;
+    @include transition(all 300ms ease);
+  }
+
+  > img.active {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    @include transition(all 300ms ease);
+  }
+
+
+  &:hover, &.hovered {
+    > img.default {
+      opacity: 0;
+    }
+    > img.active {
+      opacity: 1;
+    }
+  }
+
+  &:hover ~ .header-dropdown-submenu {
+    display: block;
+  }
+
+}
+
+.header-dropdown-submenu {
+  display: none;
+  position: absolute;
+  animation-duration: 500ms;
+  list-style: none;
+  top: 41px;
+  right: calc(100% - 29px);
+  margin: 13px 0 0 0;
+  padding: 0px 15px 0 15px;
+  border-right: 4px solid #fff;
+
+  > li {
+    position: relative;
+    top: 20px;
+    // padding-left: 10px;
+    // border-left: 3px solid #fff;
+  }
+
+  > li > a {
+    display: block;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    padding: 8px 10px 8px 18px;
+    background: #fff;
+    color: #6a7275;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 0 5px 24px -12px black;
+    font-weight: 500;
+    transition-duration: 200ms;
+
+    &:after {
+      content: " ";
+      background: #fff;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      right: -25px;
+      top: 11px;
+      border-radius: 100%;
+    }
+
+    &:hover {
+      background: #DF503C;
+      color: #fff;
+
+      &:before {
+        background: #DF503C;
+      }
+
+    }
+
+  }
+
+  &:hover {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: $desktop-hd-above + 1) {
+
+  .header {
+    width: 1440px;
+  }
+
+}
+
+@media screen and (max-width: $desktop-hd-above) {
+
+  .header {
+    //width: 100%;
+    left: 25px;
+    right: 25px;
+  }
+
+  .header-weather  {
+    display: inherit;
+  }
+
+  .header-nav {
+
+    &.-profile-header{
+      padding: 10px;
+      // padding: 17px 30px 20px 12px;
+      // img {
+      //   max-height: inherit;
+      // }
+    }
+
+  }
+
+
+}

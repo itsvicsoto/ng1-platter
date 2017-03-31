@@ -1,0 +1,341 @@
+.main-wrapper {
+  min-height: 100vh;
+  background: $site-bg;
+  background: $site-bg-gradient;
+}
+
+.main-content {
+  padding-top: 110px;
+
+  .main-content-tab-wrap {
+    padding: 20px 20px 0 0;
+    margin-top: 20px;
+  }
+
+}
+
+.main-content-tab-content {
+  display: table;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  // margin-bottom: 45px;
+  min-height: 200px;
+  background: #fff;
+  // @include clearfix();
+
+  &:not(.-start-of-care) {
+    @include dashboardContentBox(true, false, false);
+    background: #fff;
+    padding: 40px;
+  }
+
+  &.-with-left-nav {
+    padding: 0;
+    border-radius: 20px;
+  }
+
+  > .main-content-tab-content-left-nav {
+    display: table-cell;
+    width: 300px;
+    vertical-align: top;
+    background: #F9F7F5;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  > .main-content-tab-content-right-content {
+    //display: table-cell;
+    min-width: 500px;
+    //max-width: 900px;
+    padding: 30px;
+    padding-top: 50px;
+    vertical-align: top;
+  }
+
+  > .main-content-tab-content-full {
+    width: 100%;
+    padding: 20px;
+  }
+
+  // for patient start of care
+
+  &.-start-of-care {
+    > .main-content-tab-content-left-nav {
+      width: 240px;
+      padding: 10px;
+      font-size: 12px;
+      border-bottom-left-radius: 20px;
+    }
+
+    > .main-content-tab-content-right-content {
+      //width: calc(100% - 240px);
+      padding: 20px;
+    }
+  }
+
+}
+
+.main-content-tabs {
+  display: block;
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+
+  > li {
+    display: inline-block;
+    padding: 9px 0;
+
+    a {
+      padding: 10px 20px;
+      background: #F2CCBF;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      font-size: 13px;
+
+      &.active {
+        background: #F87054;
+      }
+
+    }
+
+  }
+
+  &.-patient {
+    white-space: nowrap;
+    width: 100%;
+    overflow: auto;
+
+    > li {
+      a {
+        background: #CAC3BD;
+        font-weight: bold;
+
+        &.active {
+          background: #A6A095;
+        }
+      }
+    }
+  }
+
+}
+
+/* Main Content Sub Nav
+   ========================================================================== */
+
+.main-content-wizard-tabs {
+  list-style: none;
+  padding-left: 10px;
+
+  > li {
+    //padding: 10px 0;
+
+    a {
+      padding: 10px;
+      color: #6a7275;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      display: block;
+      margin: 0;
+
+      &.active {
+        background: #F5ECE1;
+        border-radius: 5px;
+      }
+
+    }
+
+  }
+}
+
+.main-content-wizard-content {
+
+  h4:first-child,
+  h5:first-child {
+    margin-top: -20px !important;
+    border-top-right-radius: 20px;
+  }
+
+}
+
+
+.main-wrapper--dashboard {
+  background: $site-bg-dashboard;
+  background: $site-bg-gradient-dashboard;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-dashboard;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: white;
+    }
+  }
+
+}
+
+.main-wrapper--operations {
+  background: $site-bg-operations;
+  background: $site-bg-gradient-operations;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-operations;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: #fff;
+    }
+  }
+
+  .patient-content .patient-wizard-form-buttons-wrap {
+    background: $site-bg-header-operations;
+    box-shadow: none;
+  }
+
+
+}
+
+.main-wrapper--clinician {
+  background: $site-bg-operations;
+  background: $site-bg-gradient-clinician;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-clinician;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: white;
+    }
+  }
+
+  .patient-content .patient-wizard-form-buttons-wrap {
+    background: $site-bg-header-clinician;
+    box-shadow: none;
+  }
+
+}
+
+.main-wrapper--facts {
+  background: $site-bg-facts;
+  background: $site-bg-gradient-facts;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-facts;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: white;
+    }
+  }
+
+  .patient-content .patient-wizard-form-buttons-wrap {
+    background: $site-bg-header-facts;
+    box-shadow: none;
+  }
+
+}
+
+.main-wrapper--messages {
+  background: $site-bg-messages;
+  background: $site-bg-gradient-messages;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-messages;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: white;
+    }
+  }
+
+}
+
+.main-wrapper--branches {
+  background: $site-bg-branches;
+  background: $site-bg-gradient-branches;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-branches;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: white;
+    }
+  }
+
+
+  .patient-content .patient-wizard-form-buttons-wrap {
+    background: $site-bg-header-branches;
+    box-shadow: none;
+  }
+
+}
+
+.main-wrapper--billing {
+  background: $site-bg-billing;
+  background: $site-bg-gradient-billing;
+
+  .header,.-bgblend, .patient-list-folder__sorter-alphabets {
+    background: $site-bg-header-billing;
+  }
+
+  .-bgblend {
+    &.-white, &:hover {
+      background: #fff;
+      color: inherit;
+    }
+    &.-orange, &:hover {
+      background: $pumpkin;
+      color: inherit;
+    }
+  }
+
+
+  .patient-content .patient-wizard-form-buttons-wrap {
+    background: $site-bg-header-billing;
+    box-shadow: none;
+  }
+
+}

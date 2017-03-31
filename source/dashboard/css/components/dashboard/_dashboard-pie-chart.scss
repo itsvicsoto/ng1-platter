@@ -1,0 +1,79 @@
+.dashboard-pie-chart {
+  text-align: center;
+
+  canvas {
+    margin: 20px auto;
+    display: block;
+    width: 100% !important;
+    max-width: 150px;
+    height: auto !important;
+  }
+
+}
+
+  .dashboard-pie-chart__header {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
+  }
+
+  .dashboard-pie-chart__legends {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 20px 0 0 40px;
+  }
+
+    .dashboard-pie-chart__legends-item {
+      position: relative;
+      display: block;
+      padding-left: 30px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      text-align: left;
+      @include legendColorsBefore();
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        background: #DDD9D8;
+        height: 6px;
+        width: 19px;
+        border-radius: 10px;
+        // box-shadow: 0 1px 1px 0px rgba(102,102,102,0.48);
+      }
+
+    }
+
+
+    // MODIFIER
+
+    .dashboard-pie-chart__legends-item--medium {
+      font-size: 13px;
+      font-weight: normal;
+      padding-bottom: 20px;
+      @extend .dashboard-pie-chart__legends-item;
+
+      &:before {
+        top: 5px;
+      }
+
+    }
+
+    .dashboard-pie-chart__legends-item--large {
+      font-size: 25px;
+      font-weight: 300;
+      padding-bottom: 10px;
+      @extend .dashboard-pie-chart__legends-item;
+
+      &:before {
+        top: 16px;
+      }
+
+    }

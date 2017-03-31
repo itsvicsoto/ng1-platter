@@ -1,0 +1,28 @@
+.main-content {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+
+  /* Cell modifiers
+     ========================================================================== */
+
+  &.home-bg {
+    background: url("/assets/images/elements/background_tile.png");
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
+
+  &.home-bg-r4 {
+    //background: url("/assets/images/elements/layout/bg_texture_beige.png");
+    //padding-bottom: 20px;
+  }
+
+  &.about-bg {
+    background: url('/assets/images/elements/about_bg_tile.png');
+  }
+
+}
+
+body.home-bg-r4 {
+  background: url("/assets/images/elements/bg_texture_canvas_gray.png");
+}

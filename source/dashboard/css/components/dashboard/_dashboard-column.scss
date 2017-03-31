@@ -1,0 +1,19 @@
+.dashboard-column {
+  display: table;
+  width: 100%;
+}
+
+  .dashboard-column__row {
+    display: table-row;
+
+    &:nth-child(odd) {
+      background: #F1F3EB;
+    }
+
+  }
+
+    .dashboard-column__row-item {
+      display: table-cell;
+      font-size: 15px;
+      padding: 20px 10px 20px 40px;
+    }

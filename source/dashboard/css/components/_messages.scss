@@ -1,0 +1,98 @@
+.c-messages {}
+
+  .c-messages-new {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    border: 1px solid #d7d7d7;
+    overflow: auto;
+  }
+
+    .c-messages-new__to {
+      position: relative;
+      padding: 10px;
+      border-bottom: 1px solid #d7d7d7;
+
+      .add-cc {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+    }
+
+    .c-messages-new__subject {
+      padding: 10px;
+      border-bottom: 1px solid #d7d7d7;
+    }
+
+    .c-messages-new__content {
+      padding: 10px;
+    }
+
+    .c-messages-textarea {
+      width: 100%;
+      border: 1px solid #d7d7d7;
+      background: rgb(249, 249, 249);
+      margin-bottom: 10px;
+    }
+
+      .c-messages-textarea__btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+
+// INBOX
+
+.c-messages-inbox {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  overflow: auto;
+}
+
+  .c-messages-inbox-threads {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: calc(100% - 130px);
+    overflow: auto;
+  }
+
+    .c-messages-inbox-thread {
+      border: 1px solid #d7d7d7;
+      margin-bottom: 10px;
+    }
+
+      .c-messages-inbox-thread-unopened {
+        padding: 10px;
+      }
+
+      .c-messages-inbox-thread-header {
+        padding: 10px;
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .c-messages-inbox-thread-content {
+        padding: 10px;
+      }
+
+  .c-messages-inbox-reply {
+    position: absolute;
+    padding: 10px 0;
+    height: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //border: 1px solid #d7d7d7;
+    //
+    //
+  }

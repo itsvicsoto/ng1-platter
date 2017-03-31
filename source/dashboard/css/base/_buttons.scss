@@ -1,0 +1,132 @@
+a {
+  &:hover,&:focus {
+    outline : none;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 50px;
+  letter-spacing: .5px;
+
+  &.btn-sm {
+    padding : 5px 10px;
+  }
+
+  &.btn-md {
+    padding : 8px 15px;
+  }
+
+  // COLORS
+
+  &.btn-orange {
+    background: $pumpkin;
+    color: #fff;
+  }
+
+  &.btn-green {
+    background: $green;
+    color: #fff;
+  }
+
+  &.btn-gray {
+    background: #BABABA;
+    color: #fff;
+  }
+
+  &.btn-beige {
+    background: #C9C3BC;
+    color: #fff;
+  }
+
+  &.btn-red {
+    background: $red;
+    color: #fff;
+  }
+
+  // sizes
+
+  &.btn-half {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  &.btn-one-third {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+
+  &.btn-one-fourth {
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 0 10px;
+  }
+
+}
+
+button, a {
+  outline: none !important;
+
+  &:hover {
+    outline: none !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+}
+
+.btn-transparent {
+  background: none;
+}
+
+.btn-rounded {
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+
+
+  &.-black {
+    border: 2px solid #000;
+  }
+
+  &.-blue {
+    border: 2px solid #159DEF;
+    color: #159DEF;
+  }
+
+  &.-orange {
+    background: $orange;
+  }
+
+  &.-red {
+    background: $red;
+  }
+
+  &.-pumpkin {
+    background: $pumpkin;
+    color: $button-color;
+  }
+
+  &.-bgblend {
+    background: $bgBlend;
+    color: $button-color;
+    //border: 2px solid #fff;
+  }
+
+  &.-white {
+    background: #fff;
+    color: $text-color-dark;
+  }
+
+
+
+}

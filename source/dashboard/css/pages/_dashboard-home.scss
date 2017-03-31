@@ -1,0 +1,332 @@
+// body wrapper on dashboard home
+// see layout-dashboard-home.html
+
+.dashboard-home-wrapper {
+  min-height: 100vh;
+  background: #E4DCD9;
+}
+
+// see dashboard.html
+
+.dashboard-home {
+}
+
+.dashboard-sidepanel {
+  z-index: 2;
+  position: fixed;
+  width: 296px;
+  top: 0;
+  padding-top: 110px;
+  bottom: 0;
+  overflow: auto;
+
+  // --noscroll
+  &--noscroll {
+    @extend .dashboard-sidepanel;
+    position: relative;
+  }
+
+}
+
+.dashboard-sidepanel-weather-now {
+  position: relative;
+  padding: 10px;
+  background: #464458;
+  border-bottom: 1px solid #4D4B62;
+  color: #fff;
+
+  // overlay bg
+  &:before {
+    content: ' ';
+    background: url("/assets/dashboard/images/dashboard_map.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .weather-short-info,
+  .weather-main-info {
+    position: relative;
+    z-index: 1;
+  }
+
+  .weather-short-info {
+    font-size: 10px;
+    font-weight: normal;
+    color: #9B9BA0;
+
+    > .day {
+      display: block;
+    }
+
+    > .date {
+      display: block;
+    }
+
+  }
+
+  .weather-main-info {
+    padding: 30px 0 40px 0;
+    font-size: 60px;
+    text-align: center;
+
+    .temp {
+      font-weight: 100;
+    }
+
+    .location {
+      font-weight: bold;
+      font-size: 12px;
+      display: block;
+    }
+
+  }
+
+}
+
+.dashboard-sidepanel-weather-future {
+  padding: 10px;
+  background: #464458;
+  border-bottom: 1px solid #4D4B62;
+  color: #fff;
+
+  .weather-future-items {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .weather-future-item {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 10px;
+    text-align: center;
+
+    > .day {
+      display: block;
+      font-weight: bold;
+    }
+
+    > .weather-icon {
+      display: block;
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    > .temp {
+      display: block;
+    }
+
+  }
+
+  .weather-future-item-next {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 11px);
+    padding: 2px 7px 2px 8px;
+    background: #5C5A71;
+    border-radius: 100%;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+}
+
+.dashboard-sidepanel-calendar {
+  background: #464458;
+  border-radius: 20px;
+}
+
+// HEADER
+.dashboard-content-header {
+
+}
+
+.dashboard-content {
+  //position: fixed;
+  top: 0;
+  padding-top: 110px;
+  padding-left: 330px;
+  width: auto;
+  bottom: 20px;
+  padding-right: 20px;
+  margin: auto;
+  overflow: auto;
+
+
+
+  // --noscroll
+  &--noscroll {
+    @extend .dashboard-content;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-left: 410px;
+    right: 0;
+  }
+
+}
+
+.dashboard-schedules {
+  position: relative;
+  padding: 30px 125px;
+  height: 140px;
+  background: #F5F1EF;
+  font-size: 11px;
+  font-weight: bold;
+  color: #A49F9B;
+  overflow: hidden;
+
+  > .schedules-ticket {
+    position: absolute;
+    padding: 5px 10px;
+    top: 30px;
+    left: 0;
+    background: #EE6958;
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+  }
+
+  > .schedules-content {
+
+    .schedules-items {
+      .schedules-item {
+        padding-bottom: 30px;
+
+        &.upcoming {
+          opacity: .15;
+        }
+
+        // date ui
+        .date {
+          display: inline-block;
+          padding-right: 20px;
+          border-right: 1px solid #DCD5D0;
+
+          .dayofmonth {
+            display: inline-block;
+            font-size: 50px;
+            font-weight: 200;
+            line-height: 1;
+          }
+          .secondarydate {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 200;
+            padding: 6px 0px 6px 5px;
+            .month {
+              display: block;
+              line-height: 1;
+            }
+            .daytime {
+              line-height: 1;
+              display: block;
+            }
+          }
+        }
+
+        // patient
+        .patient {
+          display: inline-block;
+          padding-left: 20px;
+          vertical-align: top;
+
+          > .avatar {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-size: cover;
+          }
+
+          > .info {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 15px;
+
+            > .name {
+              font-size: 20px;
+            }
+
+            > .location {
+            }
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.dashboard-header-profile {
+  list-style: none;
+  position: fixed;
+  top: 28px;
+  right: 10px;
+
+  > li {
+    display: inline-block;
+    padding-right: 10px;
+
+    > a {
+    }
+
+    > a > img {
+      height: 35px;
+    }
+
+  }
+}
+
+.dashboard-main-selection {
+  padding: 15px;
+  min-height: 100vh;
+  background: url("/assets/dashboard/images/dashboard_icons_bg.jpg");
+  color: #fff;
+  text-align: center;
+}
+
+.dashboard-main-selection-icons {
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 15px;
+
+    .icon-label {
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+}
+
+@media (min-width: $above-laptop) {
+
+  .dashboard-sidepanel {
+    width: 296px;
+  }
+
+}
+
+@media (min-width: $desktop-hd-above) {
+
+  .dashboard-content {
+    padding-left: 330px;
+    width: 100%;
+    //padding-right: 40px;
+  }
+
+}

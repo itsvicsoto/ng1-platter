@@ -1,0 +1,62 @@
+.patient-recipient {
+
+  .patient-recipient-header {
+    padding-bottom: 10px;
+
+    > .checkbox {
+      padding: 0;
+      float: right;
+    }
+  }
+
+  .patient-recipient-items {
+    @include clearfix();
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    border-right: 0;
+    border-left: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+  }
+
+  .patient-recipient-items > .patient-recipient-item {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    background: #FBFBFB;
+    border-bottom: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+    cursor: pointer;
+    @include transition(background 300ms ease);
+
+    > .name {
+      display: inline-block;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    > .close-btn {
+      display: none;
+    }
+
+    &.selected {
+      background: #EDF6E8;
+
+      > .close-btn {
+        display: block;
+        float: right;
+        padding: 15px;
+        @include transition(all 150ms ease);
+
+        &:hover {
+          @include scale(1.1)
+        }
+
+      }
+
+    }
+
+  }
+
+}

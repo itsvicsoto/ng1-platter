@@ -1,0 +1,92 @@
+[data-siva="validate"] {
+  border-width: 1px;
+  transition: border-color 300ms ease;
+
+  &.validate-error, .validate-error {
+    border-color: #D4474B;
+    border-width: 2px;
+
+    > label:first-child {
+      color: #D4474B;
+
+      ~ .validation-error-message {
+        margin-left: 15px;
+      }
+
+    }
+
+  }
+
+  &.validate-valid, .validate-valid {
+    border-color: #AED997;
+    border-width: 2px;
+  }
+
+  &.input-group {
+    max-width: 300px;
+  }
+
+  .input-group {
+    max-width: 300px;
+  }
+
+}
+
+.-start-of-care {
+  .input-group {
+    max-width: 300px;
+  }
+
+  .input-group {
+    max-width: 300px;
+  }
+}
+
+
+.validation-error-message {
+
+  // position: absolute;
+  // top: -44px;
+
+  position: relative;
+  // position: absolute; */
+  margin-top: 10px;
+  display: inline-block;
+  /* top: -35px; */
+  background: #D4474B;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 8px;
+
+  i {
+    position: absolute;
+    top: -14px;
+    color: #D4474B;
+    left: calc(50% - 8px);
+    font-size: 17px;
+  }
+
+}
+
+.textfield-checkbox-combo {
+
+  .textfield-checkbox-combo-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+
+  input {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .checkbox {
+    display: inline-block;
+  }
+
+
+}

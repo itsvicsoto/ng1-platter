@@ -1,0 +1,105 @@
+/* Media Queries
+   ========================================================================== */
+
+$above-laptop: 1281px;
+
+$laptop-below: 1279px;
+
+$tablet-below: 767px;
+$tablet-above: 768px;
+
+$mobile-below: 600px;
+
+$desktop-hd-above: 1440px;
+
+/* SITE GLOBALS
+   ========================================================================== */
+
+// default colors
+$site-bg: #BAD7D5;
+$site-bg-gradient: radial-gradient(circle farthest-side at left top, #C4E5E3,#97bfbe 1000%);
+
+// dashboard colors
+$site-bg-dashboard: #fab468;
+$site-bg-gradient-dashboard: radial-gradient(circle farthest-side at left top, #fab468, #fab468 1000%);
+$site-bg-header-dashboard: #cb8c48;
+
+// operations colors
+$site-bg-operations: #8fc2ea;
+$site-bg-gradient-operations: radial-gradient(circle farthest-side at left top, #8fc2ea, #8fc2ea 1000%);
+$site-bg-header-operations: #57a4e0;
+
+// clinician colors
+$site-bg-clinician: #f1c5c5;
+$site-bg-gradient-clinician: radial-gradient(circle farthest-side at left top, #f1c5c5, #f1c5c5 1000%);
+$site-bg-header-clinician: #df9c9c;
+
+// facts colors
+$site-bg-facts: #b196c1;
+$site-bg-gradient-facts: radial-gradient(circle farthest-side at left top, #b196c1, #f1c5c5 1000%);
+$site-bg-header-facts: #816c8e;
+
+// facts colors
+$site-bg-messages: #98b9e0;
+$site-bg-gradient-messages: radial-gradient(circle farthest-side at left top, #98b9e0, #f1c5c5 1000%);
+$site-bg-header-messages: #7d99bb;
+
+// facts colors
+$site-bg-branches: #ee6958;
+$site-bg-gradient-branches: radial-gradient(circle farthest-side at left top, #ee6958, #f1c5c5 1000%);
+$site-bg-header-branches: #c45749;
+
+// billing colors
+$site-bg-billing: #9cd46f;
+$site-bg-gradient-billing: radial-gradient(circle farthest-side at left top, #9cd46f, #f1c5c5 1000%);
+$site-bg-header-billing: #88b960;
+
+$site-orange: #EE6958;
+$site-header-color: #7C8687;
+
+// Typograpy
+$text-color-dark: #6a7275;
+$text-color-dark-washed-out: #ABABAB;
+$text-color-light: #6a7275;
+
+
+// colors
+
+$gray: #E7E7DF;
+$green: #92B758;
+$teal: #46BFBD;
+$orange: #FDB45C;
+$pumpkin: #FF4300;
+$red: #C73935; //#F7464A;
+$blue: #398FAA;
+$bgBlend: #B0CFCD;
+$yellow: #FDD172;
+$purple: #D15368;
+
+// CHART COLORS
+
+$chart-green: #92B758;
+$chart-teal: #46BFBD;
+$chart-orange: #FDB45C;
+$chart-red: #F7464A;
+$chart-blue: #398FAA;
+$chart-yellow: $yellow;
+$chart-pumpkin: $pumpkin;
+
+
+// legend color
+
+$legend-color-1: #eb7461;
+$legend-color-2: #e6aeac;
+$legend-color-3: #c6e6ce;
+$legend-color-4: #268192;
+$legend-color-5: #a7d6eb;
+$legend-color-6: #f88f58;
+$legend-color-7: #7accb8;
+$legend-color-8: #b18eaa;
+$legend-color-9: #716465;
+$legend-color-10: #a89789;
+
+// buttons
+$button-color: #fff;
+$button-color-dark: #000;

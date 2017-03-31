@@ -1,0 +1,64 @@
+[data-siva-attachment-hover] {
+  position: relative;
+
+  &:hover {
+
+    //.m-attachments {
+    //  opacity: 1;
+    //}
+
+  }
+
+
+}
+
+.m-attachments {
+  position: fixed;
+  padding: 10px 20px;
+  top: -9999px;
+  left: -9999px;
+  width: 300px;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid rgba(158, 158, 158, 0.52);
+  //opacity: 0;
+  @include transition(opacity 150ms ease);
+
+  //&:hover {
+  //  opacity: 1;
+  //}
+
+}
+
+  .m-attachments-close-btn {
+    position: absolute;
+    top: -13px;
+    right: -7px;
+    font-size: 25px;
+    //background: #fff;
+    color: #7d7a7a;
+  }
+
+  .m-attachments-list {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow: auto;
+
+    > li {
+      display: block;
+      padding: 0 0 5px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+      color: #575C6B;
+
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .m-attachments-upload {
+    display: none;
+  }

@@ -1,0 +1,85 @@
+.patient-list-folder {}
+
+  .patient-list-folder__label {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    /* background: white; */
+    border-radius: 25px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .patient-list-folder__filter-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .patient-list-folder__slider-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 200px);
+    padding: 40px 0 70px 0;
+  }
+
+  .patient-list-folder__sorter-wrap {
+    display: block;
+    text-align: center;
+  }
+
+// filter buttons
+
+.patient-list-folder__filter-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.patient-list-folder__filter-item {
+  margin-bottom: 8px;
+
+  > button, a {
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+// SORTER
+
+.patient-list-folder__sorter-search-btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.patient-list-folder__sorter-alphabets {
+  display: inline-block;
+  vertical-align: middle;
+  background: $bgBlend;
+  margin: 0;
+  padding: 0 20px;
+  border-radius: 50px;
+  @include clearfix();
+}
+
+  .patient-list-folder__sorter-alphabets-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .patient-list-folder__sorter-alphabets-letter {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+// ROLODEX SLIDER

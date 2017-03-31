@@ -1,0 +1,46 @@
+.dashboard-weather {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  background: #464458;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  background-image: url("/assets/dashboard/images/dashboard/dashboard_weather_map.png");
+  background-size: 240px;
+}
+
+  .dashboard-weather-icon {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 70px;
+    line-height: 100px;
+    vertical-align: middle;
+  }
+
+  .dashboard-weather-temp {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 40px;
+    line-height: 100px;
+    vertical-align: middle;
+  }
+
+  .dashboard-weather-info {
+
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 15px;
+    vertical-align: middle;
+
+    > .address {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    > .date {
+      font-size: 90%;
+      color: #F7F6FF;
+    }
+
+  }

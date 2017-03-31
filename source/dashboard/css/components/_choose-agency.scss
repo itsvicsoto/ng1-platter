@@ -1,0 +1,47 @@
+.c-choose-agency {
+  padding-top: 100px;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul > li {
+    display: inline-block;
+  }
+
+  ul > li > a {
+    background: #fff;
+    box-shadow: 1px 3px 16px -7px black;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: inherit;
+    display: inline-block;
+    margin: 10px;
+    @include transition(transform 200ms ease);
+    @include scale(1);
+
+    > i {
+      display: block;
+      font-size: 40px;
+    }
+
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+
+}
+
+.c-choose-agency__header {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.c-choose-agency__logo {
+  max-width: 150px;
+}

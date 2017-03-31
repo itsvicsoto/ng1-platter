@@ -1,0 +1,33 @@
+.my-settings {
+
+}
+
+
+.my-settings-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+
+  }
+
+  > li > a {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    color: #f3797f;
+    font-weight: bold;
+
+    &.active {
+      background: #FDB45C;
+      color: #fff;
+    }
+
+  }
+
+}

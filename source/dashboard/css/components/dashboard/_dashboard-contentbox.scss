@@ -1,0 +1,42 @@
+.dashboard-contentbox {
+  @include dashboardContentBox();
+
+}
+
+.dashboard-contentbox--spring {
+  @include dashboardContentBox(true, false);
+}
+
+.dashboard-contentbox--spring-nop {
+  @include dashboardContentBox(true, false, true);
+}
+
+
+.dashboard-contentbox-split-2 {
+
+  &--height-scroll {
+    @extend .dashboard-contentbox-split-2;
+    overflow: auto;
+  }
+
+  .dashboard-contentbox-split-section {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
+    &:first-child {
+      border-right: 1px solid #E7E7DF;
+    }
+
+  }
+
+}
+
+
+.dashboard-height-500 {
+  min-height: 500px;
+}
+
+.dashboard-height-400 {
+  min-height: 450px;
+}

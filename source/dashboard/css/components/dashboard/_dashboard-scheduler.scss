@@ -1,0 +1,17 @@
+.c-scheduler {
+  @include dashboardContentBox(false, false, false);
+  margin-bottom: 70px;
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+
+  input, select {
+    height: 45px;
+    width: 100% !important;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+}

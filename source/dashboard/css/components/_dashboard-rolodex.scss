@@ -1,0 +1,224 @@
+.dashboard-rolodex {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+
+  &--mini {
+    @extend .dashboard-rolodex;
+    position: relative;
+    margin: 0 auto 20px auto;
+    max-width: 270px;
+    z-index: 1;
+  }
+
+  @mixin dashboard-rolodex-pad() {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 109px;
+    bottom: 0;
+    opacity: .8;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  > .dashboard-rolodex-left-pad {
+    background: url("/dashboard/assets/images/dashboard/misc/rolodex_opaque_left.png");
+    @include dashboard-rolodex-pad();
+  }
+  > .dashboard-rolodex-right-pad {
+    background: url("/dashboard/assets/images/dashboard/misc/rolodex_opaque_right.png");
+    left: 100%;
+    right: 0;
+    @include dashboard-rolodex-pad();
+  }
+
+  > .dashboard-rolodex-left-pad--mini {
+    background: url("/dashboard/assets/images/dashboard/misc/pdf_preview_left.png");
+    @include dashboard-rolodex-pad();
+    left: -26px;
+  }
+
+  > .dashboard-rolodex-right-pad--mini {
+    background: url("/dashboard/assets/images/dashboard/misc/pdf_preview_right.png");
+    left: 100%;
+    right: 0;
+    @include dashboard-rolodex-pad();
+  }
+
+
+}
+
+.dashboard-rolodex-center {
+  position: relative;
+  padding: 0 15px;
+  min-height: 230px;
+  background: url(/dashboard/assets/images/dashboard/misc/rolodex_repeat.png);
+  max-width: 800px;
+  background-size: contain;
+  margin: auto;
+
+  &:before {
+    content: '';
+    background: url(/dashboard/assets/images/dashboard/misc/rolodex_top.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+  }
+
+  &:after {
+    content: '';
+    background: url(/dashboard/assets/images/dashboard/misc/rolodex_bottom.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
+
+  .nopatient {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &--mini {
+    @extend .dashboard-rolodex-center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    height: 150px;
+    overflow: hidden;
+
+    &:before {
+      content: none;
+      background: #fff;
+    }
+
+    &:after {
+      content: none;
+      background: #fff;
+    }
+
+  }
+
+}
+
+/**
+ * Rolodex Data
+ */
+.dashboard-rolodex__patient-card {}
+
+  // HEADER
+  .dashboard-rolodex__patient-card-header {
+    padding: 0 15px 10px 15px;
+    min-height: 65px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E5D6CF;
+  }
+
+    .dashboard-rolodex__patient-card-name {
+      display: inline-block;
+
+      > .gender {
+        display: inline-block;
+        padding-right: 10px;
+        vertical-align: middle;
+
+        > .gender-icon {
+          font-size: 45px;
+
+          &.ion-female {
+            color: pink;
+          }
+
+          &.ion-male {
+            color: #4281FF;
+          }
+
+        }
+
+      }
+
+      > .info {
+        display: inline-block;
+        font-size: 18px;
+        vertical-align: middle;
+        > .name {
+          color: $text-color-dark;
+
+          &.-solo {
+            padding: 20px 0 0 0;
+            margin-left: -10px;
+          }
+        }
+
+        > .identifier {
+          color: $text-color-dark-washed-out;
+
+          &.-category {
+            display: inline-block;
+            padding: 2px 10px;
+            background: #85C860;
+            font-size: 13px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+    }
+
+    .dashboard-rolodex__patient-card-buttons {
+      float: right;
+      padding-top: 15px;
+    }
+
+  // BODY
+  .dashboard-rolodex__patient-card-body {
+    padding: 5px 0;
+  }
+
+    // patient-card-body > .dashboard-rolodex__patient-card-info (UL)
+
+    .dashboard-rolodex__patient-card-info {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      > li {
+
+        > .info-label {
+          display: inline-block;
+          padding-bottom: 7px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #7C7775;
+        }
+
+        > .info-value {
+          display: inline-block;
+          font-weight: bold;
+          color: #6C655F;
+          font-size: 12px;
+        }
+
+      }
+
+    }

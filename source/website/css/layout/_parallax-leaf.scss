@@ -1,0 +1,59 @@
+.parallax-image-cont,
+.parallax-img-container {
+  position: fixed !important;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  width: 236px;
+
+  &.-left {
+    left: 0;
+  }
+
+  &.-right {
+    right: 0;
+  }
+
+  > .leaf-1 {
+  }
+  > .leaf-2 {
+    right: 0;
+    left: inherit;
+  }
+}
+
+.parallax-leaf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("/assets/images/elements/layout/leaves_background-left.png");
+    top: 0;
+    background-size: contain;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 178px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("/assets/images/elements/layout/leaves_background-right.png");
+    top: 0;
+    background-size: contain;
+    right: 0;
+    /* left: 0; */
+    bottom: 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 178px;
+  }
+
+}

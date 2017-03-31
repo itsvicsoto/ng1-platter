@@ -1,0 +1,117 @@
+.patient-sidetabs-wrapper {
+  position: absolute;
+  left: 100%;
+  top: 30px;
+  bottom: 30px;
+  overflow: auto;
+  width: 61px;
+}
+
+  // ul
+  .patient-sidetabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+    // li
+    .patient-sidetabs__tab {
+
+      a {
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+        }
+
+      }
+
+    }
+
+      .patient-sidetabs__tab-links {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        margin-bottom: 10px;
+        background: #86AAAA;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: #fff;
+        padding: 5px 5px 10px 15px;
+        line-height: 14px;
+
+        &:not(.active) {
+          background: #9E9E9E !important;
+        }
+
+        &.-face-sheet {
+          background: #c53a4a;
+        }
+
+        &.-admission {
+          //background: $red;
+          //background: #3ea7565;
+          background: #c53a4a;
+        }
+        &.-orders {
+          //background: $yellow;
+          //background: #eec779;
+          background: #c53a4a;
+        }
+        &.-medications {
+          //background: $orange;
+          //background: #fbb364;
+          background: #c53a4a;
+        }
+        &.-team-conference {
+          //background: $teal;
+          //background: #4cbfbc;
+          background: #c53a4a;
+        }
+        &.-nursing-to-st {
+          //background: $purple;
+          //background: #cf5469;
+          background: #c53a4a;
+        }
+        &.-msw {
+          //background: #b18faa;
+          background: #c53a4a;
+        }
+        &.-billing {
+          background: #c53a4a;
+          //background: #ea7565;
+        }
+        &.-health-insurance {
+          background: #c53a4a;
+          //background: #e6afad;
+        }
+        &.-vital-signs {
+          background: #c53a4a;
+          //background: #87aaaa;
+        }
+        &.-misc {
+          background: #c53a4a;
+          //background: #2c8192;
+        }
+
+        > span.hidden-text {
+          white-space: pre;
+          pointer-events: none;
+          visibility: hidden;
+          display: block;
+          line-height: 11px;
+        }
+
+        > span.rotated-text {
+          visibility: visible;
+          position: absolute;
+          top: 27px;
+          transform: rotate(90deg);
+          left: 8px;
+          letter-spacing: 1px;
+          font-size: 16px;
+          width: 30px;
+          white-space: nowrap;
+        }
+
+      }

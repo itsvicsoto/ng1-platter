@@ -1,0 +1,76 @@
+.formbuilder {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+
+  > .components {
+    position: fixed;
+    background: white;
+    color: #000;
+    border-right: 1px solid #dadde2;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+  }
+
+  > .canvas {
+    background: #eff1f5;
+    overflow: auto;
+    color: #000;
+    width: 100%;
+    padding: 30px 30px 30px 330px;
+
+    .canvas-inner {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  > .components, > .canvas {
+    align-items: stretch;
+  }
+
+}
+
+.formbuilder {
+
+  .components-header {
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #E9EBED;
+    border-width: 1px 0;
+    color: #222429;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+  }
+
+  /* Draggable Compnent
+     ========================================================================== */
+
+  .components-draggable {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .components-draggable-item {
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6F7070;
+    
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

@@ -1,0 +1,27 @@
+.dashboard-fact {
+  @include dashboardContentBox(true, true);
+  padding: 0 0 0 40px;
+}
+
+  .dashboard-fact__flow {
+    overflow: auto;
+    max-height: 120px;
+    padding: 40px 40px 0 0;
+  }
+
+  .dashboard-fact__heading {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    background: $site-orange;
+    padding: 5px 20px;
+    font-size: 13px;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .dashboard-fact__text {
+    margin: 0;
+    margin-bottom: 20px;
+  }

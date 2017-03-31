@@ -1,0 +1,34 @@
+.app-forms {}
+
+.app-form-btn {}
+
+.app-form-group {
+  margin-bottom: 20px;
+
+  .inline-label {
+    width: 50px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  > label {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  > .app-form-controls {
+
+    > input, select {
+      display: inline-block;
+      max-width: 150px;
+      margin-right: 5px;
+
+      &.size-md {
+        max-width: 300px;
+      }
+
+    }
+
+  }
+
+}

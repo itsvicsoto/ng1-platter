@@ -1,0 +1,25 @@
+{
+  "name": "Product",
+  "plural": "Products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "remoteId": {
+      "type": "string",
+      "required": true
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "popularityCount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

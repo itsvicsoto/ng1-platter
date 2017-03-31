@@ -1,0 +1,35 @@
+.container {}
+
+@media screen and (min-width: $desktop-hd-above + 1) {
+
+  .container {
+    width: 1440px;
+  }
+
+  .patient-layout--view-patient {
+    padding: 100px 65px 0 25px;
+  }
+
+}
+
+@media screen and (max-width: $desktop-hd-above) {
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container.patient-layout {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 25px 0 25px;
+  }
+
+  .patient-layout--view-patient {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 65px 0 25px;
+  }
+
+
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="description" content="{{ page.meta.description }}">
+    <meta name="keywords" content="{{ page.meta.keywords }}">
+
+    <meta name="og:description" content="{{ page.meta.description }}">
+    <meta name="og:title" content="{{ page.meta.title }} | SIVA-APP">
+    <meta name="og:type" content="{{ page.meta.type }}">
+
+    {% for image in page.meta.images %}
+    <meta property="og:image" content="{{ image }}">
+    {% endfor %}
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+    <title>{{ page.meta.title }} | SIVA-APP</title>
+
+    {% block head %}
+    <!-- Latest compiled and minified CSS -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/vendor/animate.css/animate.min.css"/>
+
+    <!--Favicon-->
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="/client/assets/images/favicon/apple-icon-57x57.png">-->
+    <!--<link rel="apple-touch-icon" sizes="60x60" href="/client/assets/images/favicon/apple-icon-60x60.png">-->
+    <!--<link rel="apple-touch-icon" sizes="72x72" href="/client/assets/images/favicon/apple-icon-72x72.png">-->
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="/client/assets/images/favicon/apple-icon-76x76.png">-->
+    <!--<link rel="apple-touch-icon" sizes="114x114" href="/client/assets/images/favicon/apple-icon-114x114.png">-->
+    <!--<link rel="apple-touch-icon" sizes="120x120" href="/client/assets/images/favicon/apple-icon-120x120.png">-->
+    <!--<link rel="apple-touch-icon" sizes="144x144" href="/client/assets/images/favicon/apple-icon-144x144.png">-->
+    <!--<link rel="apple-touch-icon" sizes="152x152" href="/client/assets/images/favicon/apple-icon-152x152.png">-->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/client/assets/images/favicon/apple-icon-180x180.png">-->
+    <!--<link rel="icon" type="image/png" sizes="192x192"  href="/client/assets/images/favicon/android-icon-192x192.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/client/assets/images/favicon/favicon-32x32.png">-->
+    <!--<link rel="icon" type="image/png" sizes="96x96" href="/client/assets/images/favicon/favicon-96x96.png">-->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="/client/assets/images/favicon/favicon-16x16.png">-->
+    <!--<link rel="manifest" href="/client/assets/images/favicon/manifest.json">-->
+    <!--<meta name="msapplication-TileColor" content="#ffffff">-->
+    <!--<meta name="msapplication-TileImage" content="/client/assets/images/favicon/ms-icon-144x144.png">-->
+    <!--<meta name="theme-color" content="#ffffff">-->
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+ {% block content %}{% endblock %}
+
+  <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

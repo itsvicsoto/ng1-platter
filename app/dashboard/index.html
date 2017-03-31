@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="" ng-app="app" ng-controller="MainController">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!">
+
+  <title ng-bind=""></title>
+
+  <base href="/">
+
+  <link rel="stylesheet" href="/dashboard/assets/css/style.css" />
+  <link rel="stylesheet" href="/dashboard/assets/css/vendor.min.css" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body>
+
+  <!-- <div id="chartjs-tooltip"></div> -->
+
+  <div class="main-wrapper">
+    <div ui-view="header"></div>
+
+    <div ui-view></div>
+  </div>
+
+<script src="/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/vendor/sweetalert/dist/sweetalert.min.js"></script>
+  
+  <script src="/dashboard/assets/js/vendor.min.js"></script>
+  <script src="/dashboard/assets/js/motherload-templates.min.js"></script>
+  <script src="/dashboard/assets/js/motherload.min.js"></script>
+
+
+</body>
+
+</html>

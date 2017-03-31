@@ -1,0 +1,112 @@
+.l-standard-add {}
+
+/**
+ * Found usually on add and edit components
+ */
+.l-standard-add-header {
+  padding: 12px;
+  margin-bottom: 10px;
+  @include border-top-radius(15px);
+  @include border-bottom-radius(15px);
+  background: #fff;
+
+  > .gender {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+
+    > .gender-icon {
+      font-size: 45px;
+
+      &.ion-female {
+        color: pink;
+      }
+
+      &.ion-male {
+        color: #4281FF;
+      }
+
+    }
+
+  }
+
+  > .info {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+    > .name {
+      color: $text-color-dark;
+
+      &.-solo {
+        padding: 20px 0 0 0;
+        margin-left: -10px;
+      }
+    }
+
+    > .identifier {
+      font-size: 14px;
+      color: $text-color-dark-washed-out;
+
+      &.-category {
+        display: inline-block;
+        padding: 2px 10px;
+        background: #85C860;
+        font-size: 12px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+    }
+
+  }
+
+  // modifiers
+
+  &--solo {
+    padding: 20px;
+  }
+
+}
+
+  .l-standard-add-header__title {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+  }
+
+
+/**
+ * Found in add and edit components the individual box sections
+ */
+.l-standard-add-boxes {
+
+
+  label {
+    font-weight: 400;
+    font-size: 13.5px;
+    letter-spacing: .8px;
+    color: #535353;
+  }
+
+  input, .form-control {
+    background: #ffffff;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .multiselect {
+    padding: 5px 10px 10px 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #EEECEC;
+  }
+
+}
+
+  .l-standard-add-box__title {
+    font-weight: 300;
+  }

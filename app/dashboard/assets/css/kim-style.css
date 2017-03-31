@@ -1,0 +1,51 @@
+/* Message : Create New Message*/
+.form-error {
+    -webkit-animation: bgblink 1s;  /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;  /* Chrome, Safari, Opera */
+    border: 1px solid red;
+
+}
+
+@-webkit-keyframes bgblink {
+    from {background-color: #fff;}
+    50% {color: rgba(217, 79, 79, 0.29)}
+    to {background-color: #fff;}
+}
+@keyframes bgblink {
+    from {background-color: #fff;}
+    50% {background-color: rgba(217, 79, 79, 0.29)}
+    to {background-color: #fff;}
+}
+
+/* Message : Inbox */
+.unread .item-column {
+    background: rgba(150, 200, 96, 0.55) !important;
+}
+
+.active .item-column {
+    background: rgb(96, 200, 186) !important;
+}
+
+/* Notification */
+.avatar-notification:hover {
+    opacity: 0.5;
+}
+
+.panel-popup-bottom {
+     margin-bottom: 0px;
+}
+
+.notification-section {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.21);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.notification-section:last-child {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.notification-section:first-child {
+    padding-top: 0px;
+}

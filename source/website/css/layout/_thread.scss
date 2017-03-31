@@ -1,0 +1,25 @@
+.thread {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  margin-bottom: 5px;
+
+  &.-green {
+    background: url("/assets/images/elements/home/stitches_green.png");
+  }
+
+  &.-blue {
+    background: url("/assets/images/elements/home/stitches_blue.png");
+  }
+
+  &.-brown1 {
+    background: url("/assets/images/elements/home/stitches_brown.png");
+  }
+
+  &.-brown2 {
+    background: url("/assets/images/elements/home/stitches_brown2.png");
+  }
+
+}

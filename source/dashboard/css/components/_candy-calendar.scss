@@ -1,0 +1,33 @@
+.candy-calendar {
+  width: 50px;
+  height: 50px;
+  background: #F87054;
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: middle;
+  box-shadow: 0 2px 0 .5px #933A28;
+
+  > .candy-calendar-inner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #FCFCFC;
+    vertical-align: middle;
+    top: 5px;
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    text-align: center;
+    
+    > .month {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    > .day {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+}

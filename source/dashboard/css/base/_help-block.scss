@@ -1,0 +1,9 @@
+.help-block {
+  font-size: 13px;
+  font-weight: bold;
+
+  &.has-error {
+    color: $brand-danger;
+  }
+
+}

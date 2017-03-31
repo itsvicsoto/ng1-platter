@@ -1,0 +1,56 @@
+.items-list {
+
+  > .items-add {
+
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #F9F7F5;
+    border-radius: 15px;
+    border: 2px dashed #CAC2BB;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+    > .items-add-icon {
+      font-size: 31px;
+      vertical-align: middle;
+    }
+
+    > .items-add-text {
+      display: inline-block;
+      padding: 5px;
+      font-size: 15px;
+    }
+
+  }
+
+  > .item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #F9F7F5;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 15px;
+
+    > .main-label {
+      display: inline-block;
+      width: 30%;
+      font-weight: bold;
+    }
+
+    > .additional-info {
+      display: inline-block;
+    }
+
+    > .action {
+      position: absolute;
+      top: calc(50% - 22px);
+      right: 15px;
+      font-size: 30px;
+      color: #D14947;
+    }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+.c-table {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+
+  > thead {
+    background: #98bfbe;
+    color: #fff;
+  }
+
+  th, td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+}

@@ -1,0 +1,56 @@
+.dashboard-video-player {
+  position: relative;
+  margin: 20px 0;
+  height: 250px;
+  padding-top: calc(50% - 100px);
+  background: #464458;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  background: url("/dashboard/assets/images/dashboard/dashboard_video_image.png");
+  background-size: 150%;
+  background-position-x: -37px;
+
+  > i {
+    position: relative;
+
+    &:before {
+      border: 2px solid #fff;
+      border-radius: 100%;
+      padding: 0 13px 0 25px;
+      font-size: 80px;
+    }
+
+  }
+
+  .play-text {
+    position: relative;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: black;
+    opacity: 0;
+    border-radius: 20px;
+    visibility: none;
+    @include transition(all 300ms ease);
+  }
+
+  &:hover {
+    &:before {
+      visibility: visible;
+      opacity: .5;
+    }
+  }
+
+
+}

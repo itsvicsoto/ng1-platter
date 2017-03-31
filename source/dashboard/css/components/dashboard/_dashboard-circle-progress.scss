@@ -1,0 +1,118 @@
+.dashboard-circle-progress {
+  padding: 20px 0;
+  text-align: center;
+
+  strong {
+
+    &.smaller {
+      font-size: 17px;
+      top: calc(50% - 17px);
+    }
+
+  }
+  canvas {
+    max-height: 100%;
+    max-width: 150px;
+  }
+
+  &--header {
+    @extend .dashboard-circle-progress;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+    height: 70px;
+
+    canvas {
+      max-width: 70px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  }
+
+
+  &:hover {
+    .dashboard-circle-progress__face-to-face--header {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+}
+
+  .dashboard-circle-progress__face-to-face {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 300;
+
+    > span {
+      display: block;
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 10px;
+    }
+
+
+
+    &--header {
+      //@extend .dashboard-circle-progress__face-to-face;
+      //text-align: left;
+      //font-weight: bold;
+      //line-height: 15px;
+      //display: inline-block;
+      //vertical-align: middle;
+
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      left: calc(100% - 103px);
+      background: #789B99;
+      z-index: 9999999;
+      //width: 150px;
+      padding: 5px 20px;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: normal;
+      text-align: center;
+      @include transition(all 150ms ease);
+
+    }
+
+  }
+
+  .dashboard-circle-progress__legends {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+    .dashboard-circle-progress__legends-item {
+      position: relative;
+      display: block;
+      padding-left: 30px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      text-align: left;
+      @include legendColorsBefore();
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        background: #DDD9D8;
+        height: 6px;
+        width: 19px;
+        border-radius: 10px;
+        // box-shadow: 0 1px 1px 0px rgba(102,102,102,0.48);
+      }
+
+    }

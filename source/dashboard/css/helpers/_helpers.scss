@@ -1,0 +1,30 @@
+.margin-center {
+  margin: auto;
+}
+
+.valign {
+  display: table;
+  width: 100%;
+}
+
+.valign-inner {
+  display: table-cell;
+  vertical-align: middle;
+
+  &.-bottom {
+    vertical-align: bottom;
+  }
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.no-m-top {
+  margin-top: 0;
+}

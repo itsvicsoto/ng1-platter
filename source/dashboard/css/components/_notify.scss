@@ -1,0 +1,24 @@
+.c-notify {
+  padding: 10px 30px;
+
+  // vendor specifics
+  .cg-notify-close {
+    top: 6px;
+    right: 7px;
+  }
+
+}
+
+.c-notify-error {
+  background: $brand-danger !important;
+  color: #fff !important;
+  border: 0 !important;
+  font-weight: bold !important;
+}
+
+.c-notify-success {
+  background: $brand-success !important;
+  color: #fff !important;
+  border: 0 !important;
+  font-weight: bold !important;
+}
