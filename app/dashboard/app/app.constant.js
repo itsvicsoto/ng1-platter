@@ -8,11 +8,12 @@
   function appConfiguration() {
     return {
       LOCAL: {
-        BASE_URL: 'http://localhost:8080/api/'
+        API_BASE_URL: 'http://localhost:8080/api/'
       },
       PRODUCTION: {
         BASE_URL: 'http://localhost:8081/api/'
       },
+      HEROKU_HOSTNAME: '',
       TEST_TOKEN: 'REPLACE_THIS_WITH_TOKEN',
       APIKEY: 'qJlhE9AKM6yAPykk',
       DEBUG_CLIENT: true,

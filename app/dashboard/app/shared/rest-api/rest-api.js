@@ -33,9 +33,9 @@
     });
   }
 
-  AppPathResolver.$inject = [];
+  AppPathResolver.$inject = ['appConfiguration'];
 
-  function AppPathResolver() {
+  function AppPathResolver(appConfiguration) {
 
     var service = {
       resolvePath: resolvePath
@@ -44,8 +44,8 @@
     return service;
 
     function resolvePath() {
-      if (window.location.hostname == 'localhost') {
-        return 'http://localhost:8080/api/';
+      if (window.location.hostname == 'localhost' || window.location.hostname == appConfiguration().HEROKU_HOSTNAME) {
+        return appConfiguration().LOCAL.API_BASE_URL
       } else {
         return 'http://' + window.location.hostname + ':8081/api/';
       }
